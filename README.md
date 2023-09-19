@@ -1,19 +1,28 @@
 # Pizza-sales
 Analysis of pizza sales throughout a calendar year using several criteria
 *1.Total Revenue*/
+
  select sum(total_price) as Revenue from pizza_sales
  
  /*2.Average Order value*/
- select sum(total_price)/count( distinct order_id) as Avgerage_order_value from pizza_sales
+ 
+ select sum(total_price)/count( distinct order_id) 
+ as Avgerage_order_value from pizza_sales
  
  /*3.Total pizzas sold*/
- select sum(quantity) as Total_pizzas_sold from pizza_sales
+ 
+ select sum(quantity) as Total_pizzas_sold 
+ from pizza_sales
  
  /*4.Total orders*/
- select count( distinct order_id) as Total_orders from pizza_sales
+ 
+ select count( distinct order_id) as
+ Total_orders from pizza_sales
  
  /*5.Avereage pizzas per order*/
- select count(pizza_id)/count( distinct order_id) as Avgerage_o from pizza_sales
+ 
+ select count(pizza_id)/count( distinct order_id) as 
+ Avgerage_o from pizza_sales
  
  /*6.Daily Trend for Total Orders*/
  
